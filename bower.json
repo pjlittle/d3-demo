@@ -1,0 +1,33 @@
+{
+  "name": "d3-demo",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.11.1",
+    "bootstrap": "3.2.0",
+    "underscore": "1.6.0",
+    "holderjs": "2.4.0",
+    "d3": "3.4.11"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "js": "dist/jquery.js"
+    },
+    "underscore": {
+      "js": "underscore.js"
+    },
+    "bootstrap": {
+      "js": "dist/js/bootstrap.js",
+      "css": [
+        "dist/css/bootstrap.css",
+        "dist/css/bootstrap.css.map"
+      ],
+      "fonts": [
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.svg",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.woff"
+      ]
+    }
+  }
+}

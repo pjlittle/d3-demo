@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Demonstration of D3.js">
+    <meta name="author" content="P.J. Little">
+
+    <title>D3 Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this bootstrap template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <!-- Custom styles for this site -->
+    <link href="css/site.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="masthead clearfix">
+                <div class="inner">
+
+                    <h3 class="masthead-brand">
+                        <a id="mainLink" href="#"><img src="img/d3-logo.png" class="d3-logo" alt="D3"/> Demo</a>
+                    </h3>
+                    <ul class="nav masthead-nav">
+                        <li><a id="aboutLink" href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="about" class="inner cover">
+                <p class="lead">
+                    This is a simple demonstration of using <a href="http://d3js.org/" target="_blank">D3.js</a> to render
+                    a dynamic bar chart, using a public data feed. Specifically, the following concepts/APIs are covered:
+                </p>
+                <ul>
+                    <li>SVG (rect)</li>
+                    <li>Scale (d3.scale.ordinal, d3.scale.linear)</li>
+                    <li>Axis (d3.svg.axis)</li>
+                    <li>Transitions (delay, duration)</li>
+                    <li>Data Join (enter/update/exit)</li>
+                    <li>User Interactions (mouseover, mouseout)</li>
+                    <li>Dynamic Data Updates (AJAX, REST)</li>
+                </ul>
+            </div>
+
+            <div id="main" class="inner cover">
+                <h1 class="graph-title">Fremont Bridge Bicycle Usage</h1>
+
+                <p class="graph-description">
+                    The number of bikes that cross the bridge using the pedestrian/bicycle pathways, by hour, per month.
+                    Inductive loops on the east and west pathways count the passing of bicycles regardless of travel
+                    direction.
+                </p>
+
+                <div id="message" class="alert" style="display: hidden; margin: 20px;"></div>
+                <div class="input-fields">
+                    <form class="form-inline" role="form">
+                        <select class="form-control" id="month">
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6" selected>June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select class="form-control" id="year">
+                            <option>2012</option>
+                            <option>2013</option>
+                            <option selected>2014</option>
+                        </select>
+                    </form>
+                </div>
+                <div id="loader" class="loader-container">
+                    <div class="loader"></div>
+                </div>
+                <div id="visualizations">
+                    <div id="graphContainer"></div>
+                    <div id="stats">
+                        <p class="lead stats">Fun Facts:</p>
+                        <p class="lead stats">Total Bike Crossings: <span id="totalRides"></span></p>
+                        <p class="lead stats">Busiest Single Day: <span id="singleDay"></span></p>
+                        <p class="lead stats">Busiest Day of the Week (total): <span id="dailyTotal"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Data provided by <a href="http://dev.socrata.com/" target="_blank">Socrata Open Data API</a> and
+                        the <a href="https://data.seattle.gov/" target="_blank">City of Seattle</a></p>
+                    <p><a href="http://base2s.com/people/p-j/" target="_blank">P.J. Little</a> / copyright &copy; 2014 /
+                        <a href="http://base2s.com/" target="_blank">Base2 Solutions</a>.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/barchart.js"></script>
+</body>
+</html>

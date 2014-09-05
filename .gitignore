@@ -1,0 +1,15 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Node modules
+node_modules/*
+
+# build files
+bower_components/
+src/js/libs/
+public/*

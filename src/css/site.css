@@ -1,0 +1,165 @@
+
+.d3-logo {
+    width: 50px;
+}
+
+.masthead-brand a:hover {
+    text-decoration: none;
+}
+
+/*
+ * about section styles
+ */
+div#about {
+    display: none;
+    text-align: left;
+}
+
+div#about p a {
+    color: #f78643
+}
+
+div#about ul {
+    font-size: 21px;
+}
+
+/*
+ * input field styles
+ */
+.input-fields {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.input-fields select {
+    margin: 5px;
+}
+
+/*
+ *  graph / svg styles
+ */
+.graph-title {
+    text-align: left;
+}
+
+.graph-description {
+    text-align: left;
+    font-size: 16px;
+}
+
+/*#graph-container rect {
+    fill: #f98f3c;
+}*/
+
+.low {
+    fill: #fb9e33;
+}
+
+.medium {
+    fill: #f78643;
+}
+
+.high {
+    fill: #ca5c4c;
+}
+
+.border {
+    stroke: #efefef;
+    stroke-width: 2;
+}
+
+.axis text {
+    font: 10px sans-serif;
+    fill: #efefef;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #efefef;
+    shape-rendering: crispEdges;
+    stroke-width: 2;
+}
+
+/*
+ * stats styles
+ */
+.stats {
+    text-align: left;
+    color: #f98f3c;
+}
+
+/*
+ * Loading animation - complete CSS-based
+ */
+.loader-container {
+    display: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translate3d(0, 0, 0);
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+    margin: 50px auto;
+    position: absolute;
+    left: 45%
+}
+
+.loader {
+    width: 1em;
+    height: 1em;
+    font-size: 150px;
+    position: relative;
+}
+@media (max-width: 225px), (max-height: 225px) {
+    .loader {
+        font-size: 75px;
+    }
+}
+.loader:before, .loader:after {
+    content: "";
+    top: 0;
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    border-width: 0.5em;
+    border-style: double;
+    border-color: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 1em;
+    -webkit-animation: spin 1s infinite;
+    animation: spin 1s infinite;
+}
+.loader:after {
+    left: 0;
+    border-left-color: #f98f3c;
+}
+.loader:before {
+    right: 0;
+    border-right-color: #fa9f33;
+    -webkit-animation-delay: -0.25s;
+    animation-delay: -0.25s;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
