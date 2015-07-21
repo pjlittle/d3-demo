@@ -47,12 +47,8 @@ div#about ul {
     font-size: 16px;
 }
 
-/*#graph-container rect {
-    fill: #f98f3c;
-}*/
-
 .low {
-    fill: #fb9e33;
+    fill: #01DF01;
 }
 
 .medium {
